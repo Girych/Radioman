@@ -108,4 +108,12 @@ public class RadioTest {
 
         assertEquals(0, radio.getCurrentVolume());
     }
+
+    @Test
+    public void showMaxStation() {
+        Radio radio = new Radio(9);
+        radio.setCurrentStationNumber(8);
+
+        assertEquals(8, radio.getCurrentStationNumber());
+    }
 }
